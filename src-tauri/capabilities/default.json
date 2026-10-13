@@ -1,0 +1,12 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Home window and selection overlays. Only core IPC; Halo's own commands validate all input and expose no filesystem or shell access.",
+  "windows": [
+    "main",
+    "overlay-*"
+  ],
+  "permissions": [
+    "core:default"
+  ]
+}

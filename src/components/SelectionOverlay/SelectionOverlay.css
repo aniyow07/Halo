@@ -1,0 +1,57 @@
+.selection-surface {
+  position: fixed;
+  inset: 0;
+  cursor: crosshair;
+  user-select: none;
+  touch-action: none;
+  overflow: hidden;
+}
+
+.frozen-frame {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.selection-dim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+/* The huge spread shadow dims everything outside the selection. The
+   outline is drawn on the overlay only; capture already happened. */
+.selection-rect {
+  position: absolute;
+  outline: 2px solid #8ab4ff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.selection-size {
+  position: absolute;
+  left: 0;
+  top: -24px;
+  padding: 2px 6px;
+  font-size: 12px;
+  background: #1f2937;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.selection-hint {
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  background: rgba(17, 24, 39, 0.9);
+  color: #f9fafb;
+  border-radius: 8px;
+  font-size: 14px;
+  pointer-events: none;
+}
