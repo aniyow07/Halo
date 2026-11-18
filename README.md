@@ -103,7 +103,8 @@ commands with `PATH=$HOME/.local/opt/node/bin:$PATH`.
 ## Install and run
 
 ```bash
-cd halo
+git clone https://github.com/aniyow07/Halo.git
+cd Halo
 npm install
 cp .env.example .env   # then put your key in GEMINI_API_KEY
 npm run tauri dev
